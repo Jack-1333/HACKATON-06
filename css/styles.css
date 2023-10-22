@@ -1,0 +1,178 @@
+html {
+    font-size: 62.5%;/*Se utiliza para resetear los pixeles y utilizae rem.*/
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory; /*va realizar scrool de arriba hacia abajo*/
+}
+
+/*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;/*1rem = 10px*/
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Krub', sans-serif; */
+    /* background-image: linear-gradient(to top, var(--black) 0%, var(--White) 100%); */
+}
+/* .container {
+    max-width: 120rem;
+    margin: 0 auto;
+} */
+.container {
+    display:grid;
+    grid-template-columns: 10% 90%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 160rem;
+    height: 96rem;
+}
+.content {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    background-color: #303236;
+    max-width: 100%;
+    max-height: 100%;
+    width: 17.1rem;
+
+}
+.content__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.content__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 4rem;
+}
+.content__text--title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0;
+}
+.content__main {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-rows: 10% 90%;
+    background-color: black;
+}
+.content__description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 6rem;
+}
+.content__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.content__navigation--text {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.content__description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 8rem 0 0 0;
+}
+
+
+.content__description-text--title {
+    font-family: 'black Ops One';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10rem;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+.content__description-text--titlec {
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+.content__description-text--price {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: #FFFFFF;
+    margin: 14rem 0 0 0;
+
+}
+.content__description-text--paragraph {
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin: 4.5rem 23.6rem 0 0;
+    
+}
+.content__description-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0;
+}
+.content__description-button a {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #EBE1E1;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #585B61;
+    padding: 1rem;
+    border-radius: 5rem;  
+    margin-top: 9rem;
+} 
+.content__image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+}
+.content__image--shoes {
+    height: 74rem;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+}
+.content__image--shadow {
+    height: 10rem;
+    position: absolute;
+    top: 64.5rem;
+    right: 22rem;
+}
+.content__image--elipse {
+    height: 12rem;
+    position: absolute;
+    top: 37rem;
+    right: 7rem;
+    opacity: 95%;
+}
